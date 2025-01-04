@@ -1,0 +1,30 @@
++-------------------+           +-------------------+           +-------------------+
+|    University     |           |    Department     |           |      Course       |
++-------------------+           +-------------------+           +-------------------+
+| - universityName  |           | - departmentName  |           | - courseName      |
+| - departments     | *---------| - students        | *---------| - maxGrade        |
++-------------------+           | - courses         |           | - credits         |
+| + addDepartment() |           +-------------------+           | - capacity        |
+| + printUnivInfo() |           | + addStudent()    |           | - enrolledStudents|
++-------------------+           | + addCourse()     |           +-------------------+
+                                | + enrollStudent() |           | + enrollStudent() |
+                                | + printDeptInfo() |           | + dropStudent()   |
+                                +-------------------+           | + assignGrade()   |
+                                                                | + printStudents() |
+                                                                +-------------------+
+
+                                                                        
+                           +-------------------+           +-------------------+
+                           |      Student      | <--------*|       Course      |
+                           +-------------------+           +-------------------+
+                           | - name            |           |                   |
+                           | - grades          |           |                   |
+                           | - enrolledCourses |           |                   |
+                           +-------------------+           +-------------------+
+                           | + addGrade()      |           |                   |
+                           | + enrollInCourse()|           |                   |
+                           | + dropCourse()    |           |                   |
+                           | + calcAverage()   |           |                   |
+                           | + printGrades()   |           |                   |
+                           | + printCourses()  |           |                   |
+                           +-------------------+           +-------------------+
